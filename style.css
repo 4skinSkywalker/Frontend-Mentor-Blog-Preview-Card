@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Figtree';
+    src: url('./Figtree-Italic-VariableFont_wght.ttf') format('truetype-variations');
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('./Figtree-VariableFont_wght.ttf') format('truetype-variations');
+}
+
+/* Start of reset */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* End of reset */
+
+body {
+    font-family: Figtree, sans-serif;
+    background-color: #f5d04e;
+    display: grid;
+    place-items: center;
+    height: 100svh;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 1rem;
+    width: 21.875rem;
+    padding: 1rem;
+    box-shadow: 0.5rem 0.5rem 0 0 #000;
+    display: grid;
+    justify-items: start;
+    gap: 1rem;
+}
+
+.card__img {
+    width: 100%;
+    background-image: url(https://github.com/4skinSkywalker/Assets-for-my-Codepen/raw/refs/heads/main/blog-preview-card/illustration-article.svg);
+    background-size: cover;
+    aspect-ratio: 270/160;
+    border-radius: 1rem;
+}
+
+.card__category {
+    padding: 0.25rem 0.5rem;
+    background-color: #f9ce49;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 0.25rem;
+}
+
+.card__meta {
+    font-size: 0.8rem;
+    color: #282828;
+}
+
+.card__title {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.card__description {
+    color: #717171;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.card__author {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.card__author-image {
+    width: 2rem;
+    height: 2rem;
+    background-image: url(https://github.com/4skinSkywalker/Assets-for-my-Codepen/raw/refs/heads/main/blog-preview-card/image-avatar.webp);
+    background-size: cover;
+}
+
+.card__author-name {
+    font-weight: 700;
+    font-size: 0.85rem;
+}
